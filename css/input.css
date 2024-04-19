@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --max-width-calc: calc(1760px + 15px * 2);
+}
+
+
+* {
+    font-family: "Manrope", sans-serif;
+    /* outline: 1px solid red; */
+}
+
+/* For Navbar Links Hover Underline */
+.navbar-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
+    background: #000;
+}
+.navdropdown {
+    visibility: hidden;
+
+}
+.navbar-link:hover + .navdropdown, .navdropdown:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+#trigger-element {
+    position: fixed;
+    top: -100px; /* Start position above the viewport */
+    transition: top 0.5s ease; /* Add transition effect */
+    z-index: 999; /* Ensure it's above other elements */
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+} 
+
+/* Style for the custom radio button container */
+.custom-radio {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+/* Style for the plus icon */
+.custom-radio::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+
+}
+
+/* Styles for the carousel container */
+.carousel1 {
+    /* border: 1px solid red; */
+    display: flex;
+    /* overflow-x: hidden; */
+    transition: transform 0.5s ease-in-out;
+}
+.slides {
+    /* border: 1px solid red; */
+}
+
+/* Style for the custom radio button when checked */
+input[type="radio"]:checked + .custom-radio::before {
+    color: #fff;
+}
+
+/* Change background when radio button is checked */
+input[type="radio"]:checked + .custom-radio {
+    background-color: #262626;
+}
+
+/* For Landing page Play Video */
+@keyframes ping {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.25;
+    }
+    100% {
+        transform: scale(1.75);
+        opacity: 0;
+    }
+}
+
+.custom-animate-ping {
+    animation: ping 1.75s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 21;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+}
+
+/* For Marquee */
+.marquee {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.marquee__inner {
+    animation: move-rtl 30s linear infinite;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }    
+    100% {
+        transform: translateX(-100%);
+    } 
+}
+
+
+/* CSS for opacity transition */
+.opacity-transition {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* CSS for text content transition */
+.text-transition {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+details[open] summary .custom-chevron:first-child {
+    display: none;
+}
+summary .custom-chevron:last-child {
+    display: none;
+}
+details[open] summary .custom-chevron:last-child {
+    display: block;
+}
+
+summary {
+    cursor: pointer;
+    list-style: none; /* Remove default marker */
+}
+
+.custom-chevron {
+    float: right; /* Align to the right side */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+details > .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Add transition effect */
+}
+
+details[open] > .content {
+    max-height: 200px; /* Adjust the maximum height according to your content */
+}
+
+details:not([open]) > .content {
+    max-height: 0px; /* Adjust the maximum height according to your content */
+}
+

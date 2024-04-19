@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="./css/output.css">
+    <title>Hongo</title>
+    
+</head>
+<body>
+<!-- Navbar Starts here -->
+<div class="w-full bg-[#145333]">
+    <div class="max-w-[var(--max-width-calc)] flex justify-center py-2">
+        <h1 class="text-white text-[11px] text-center lg:text-[16px]">Happiness is availing great offers on hongo, Free shipping on all india delivery.</h1>
+    </div>
+</div>
+<nav id="target-element" class="bg-white z-20 top-0 start-0 w-full z-50">
+    <div class="max-w-[var(--max-width-calc)] flex flex-wrap items-center mx-auto md:px-4 justify-between">
+        <a href="./" class="xl:flex items-center space-x-3 rtl:space-x-reverse hidden">
+            <img src="./img/demo-garden-plants-logo.svg" class="h-8" alt="Hongo Logo" />
+        </a>
+        <div class="flex items-center md:gap-2">
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <a href="#" class="xl:hidden block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="search"></i> <span class="xl:block hidden">Search</span></a>
+        </div>
+        
+        <a href="./" class="xl:hidden items-center space-x-3 rtl:space-x-reverse flex">
+            <img src="./img/demo-garden-plants-logo.svg" class="h-8" alt="Hongo Logo" />
+        </a>
+        <div class="ml-[50px] hidden w-full xl:block xl:w-auto" id="navbar-default">
+            <ul class="xl:before:content-[''] xl:before:h-[20px] xl:before:my-[25px] xl:before:w-[1px] xl:before:bg-[#1d20194d] xl:before:translate-x-[-25px] xl:before:translate-y-[2px] font-medium flex flex-col p-4 xl:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 xl:flex-row xl:space-x-8 rtl:space-x-reverse xl:mt-0 xl:border-0 xl:bg-white">
+                <li>
+                    <a href="/" class="block px-3 bg-blue-700 rounded md:bg-transparent md:text-textCol navbar-link md:py-[25px]" aria-current="page">Demo</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Product</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Hot deals</a>
+                </li>
+                <li class="relative">
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">
+                        Pages
+                    </a>
+                    <div class="absolute z-10 font-normal bg-white divide-y divide-gray-100 shadow w-44 top-[70px] navdropdown opacity-0 duration-300 ease-in-out">
+                        <ul class="p-5 text-sm text-gray-700">
+                          <li>
+                            <a href="about.html" class="block px-4 py-2 text-gray-600 hover:text-gray-900">About us</a>
+                          </li>
+                          <li>
+                            <a href="contact.html" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Contact us</a>
+                          </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Blog</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Features</a>
+                </li>
+            </ul>
+        </div>
+        <div class="xl:ml-auto">
+            <ul class="font-medium flex p-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-4 rtl:space-x-reverse mt-0 border-0 bg-white">
+            
+                <li class="xl:block hidden">
+                    <a href="#" class="block px-3 bg-blue-700 rounded bg-transparent text-textCol p-0 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="search"></i> <span class="xl:block hidden">Search</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="user"></i> <span class="xl:block hidden">Account</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="heart"></i> <span class="xl:block hidden">Wishlist</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="shopping-bag"></i> <span class="xl:block hidden">Cart</span></a>
+                </li>
+            </ul>
+        </div>  
+    </div>
+</nav>
+<nav id="trigger-element" class="bg-white fixed z-20 top-0 start-0 w-full z-50">
+    <div class="max-w-[var(--max-width-calc)] flex flex-wrap items-center mx-auto md:px-4 justify-between">
+        <a href="./" class="xl:flex items-center space-x-3 rtl:space-x-reverse hidden">
+            <img src="./img/demo-garden-plants-logo.svg" class="h-8" alt="Hongo Logo" />
+        </a>
+        <div class="flex items-center md:gap-2">
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <a href="#" class="xl:hidden block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="search"></i> <span class="xl:block hidden">Search</span></a>
+        </div>
+        
+        <a href="./" class="xl:hidden items-center space-x-3 rtl:space-x-reverse flex">
+            <img src="./img/demo-garden-plants-logo.svg" class="h-8" alt="Hongo Logo" />
+        </a>
+        <div class="ml-[50px] hidden w-full xl:block xl:w-auto" id="navbar-default">
+            <ul class="xl:before:content-[''] xl:before:h-[20px] xl:before:my-[25px] xl:before:w-[1px] xl:before:bg-[#1d20194d] xl:before:translate-x-[-25px] xl:before:translate-y-[2px] font-medium flex flex-col p-4 xl:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 xl:flex-row xl:space-x-8 rtl:space-x-reverse xl:mt-0 xl:border-0 xl:bg-white">
+                <li>
+                    <a href="/" class="block px-3 bg-blue-700 rounded md:bg-transparent md:text-textCol navbar-link md:py-[25px]" aria-current="page">Demo</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Product</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Hot deals</a>
+                </li>
+                <li class="relative">
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">
+                        Pages
+                    </a>
+                    <div class="absolute z-10 font-normal bg-white divide-y divide-gray-100 shadow w-44 top-[70px] navdropdown opacity-0 duration-300 ease-in-out">
+                        <ul class="p-5 text-sm text-gray-700">
+                          <li>
+                            <a href="about.html" class="block px-4 py-2 text-gray-600 hover:text-gray-900">About us</a>
+                          </li>
+                          <li>
+                            <a href="contact.html" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Contact us</a>
+                          </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Blog</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Features</a>
+                </li>
+            </ul>
+        </div>
+        <div class="xl:ml-auto">
+            <ul class="font-medium flex p-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-4 rtl:space-x-reverse mt-0 border-0 bg-white">
+            
+                <li class="xl:block hidden">
+                    <a href="#" class="block px-3 bg-blue-700 rounded bg-transparent text-textCol p-0 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="search"></i> <span class="xl:block hidden">Search</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="user"></i> <span class="xl:block hidden">Account</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="heart"></i> <span class="xl:block hidden">Wishlist</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="shopping-bag"></i> <span class="xl:block hidden">Cart</span></a>
+                </li>
+            </ul>
+        </div>  
+    </div>
+</nav>
+<!-- Navbar Ends here -->
+<main class="">
+    <section class="pb-[50px]">
+        <div class="flex flex-col lg:flex-row max-w-[var(--max-width-calc)] mx-auto px-4 ">
+            <div class="w-full lg:w-2/3 relative">       
+                <div class="absolute left-[25%] top-[35%]">
+                    <div class="absolute w-[34px] h-[34px] rounded-full bg-white custom-animate-ping z-0"></div>
+                    <input type="radio" id="radio1" name="radio-group" checked>
+                    <label for="radio1" class="custom-radio"></label>
+                </div>
+                <div class="absolute left-[50%] top-[65%]">
+                    <div class="absolute w-[34px] h-[34px] rounded-full bg-white custom-animate-ping z-0"></div>
+                    <input type="radio" id="radio2" name="radio-group">
+                    <label for="radio2" class="custom-radio"></label>
+                </div>
+                <div class="absolute left-[69%] top-[14%]">
+                    <div class="absolute w-[34px] h-[34px] rounded-full bg-white custom-animate-ping z-0"></div>
+                    <input type="radio" id="radio3" name="radio-group">
+                    <label for="radio3" class="custom-radio"></label>
+                </div>
+                <img src="./img/demo-garden-plants-img-01.jpg" class="w-full h-full rounded-t-[16px] lg:rounded-r-none lg:rounded-l-[16px] object-cover" alt="" srcset="">
+            </div>
+            <div class="w-full lg:w-1/3 bg-[url('/img/demo-garden-plants-product-bg-img.webp')] bg-no-repeat bg-cover rounded-b-[16px] lg:rounded-l-none lg:rounded-r-[16px] py-[50px] px-[43px] flex items-center justify-center">
+                <div class="text-center flex flex-col items-center">
+                    <div class="pb-[30px]">
+                        <h1 class="text-[#51534e] font-medium border-b-2 border-[#c9cec7] w-max mx-auto ">A LIVING GIFT - UPTO 30% OFF</h1>
+                        <h2 class="text-[#145333] text-[32px] xl:text-[45px] font-bold">Special plants</h2>
+                    </div>
+                    <div class="overflow-hidden max-w-[293px] md:max-w-[421px] lg:max-w-[293px]">
+                        <div class="carousel1 w-full md:mx-0 max-w-[calc(421px * 3)] lg:max-w-[calc(293px * 3)]">
+                            <div class="flex-[0_0_auto] slides w-full md:max-w-[421px] lg:max-w-[293px]"> 
+                                <a href="#" class="px-[15px] group/card">
+                                    <div class="relative overflow-hidden rounded">
+                                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                                </div>
+                                            </button>
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">QUICK VIEW</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <img src="./img/garden-plants-product-05.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                                        <div class="flex border rounded-b-md xl:hidden">
+                                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                                
+                                        </div>
+                                    </div>
+                                    <div class="py-4 text-center">
+                                        <h1 class="text-[#262626] font-semibold">Bird’s nest fern</h1>
+                                        <h2 class="text-[#828282]">$45.00
+                                            –
+                                            $63.00</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="flex-[0_0_auto] slides w-full md:max-w-[421px] lg:max-w-[293px]">
+                                <a href="#" class="px-[15px] group/card">
+                                    <div class="relative overflow-hidden rounded">
+                                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                                </div>
+                                            </button>
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">QUICK VIEW</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <img src="./img/garden-plants-product-09.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                                        <div class="flex border rounded-b-md xl:hidden">
+                                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                                
+                                        </div>
+                                    </div>
+                                    <div class="py-4 text-center">
+                                        <h1 class="text-[#262626] font-semibold">Snake plant laurentii</h1>
+                                        <h2 class="text-[#828282]">$29.00
+                                            –
+                                            $37.00</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="flex-[0_0_auto] slides w-full md:max-w-[421px] lg:max-w-[293px]">
+                                <a href="#" class=" px-[15px] group/card">
+                                    <div class="relative overflow-hidden rounded">
+                                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                                </div>
+                                            </button>
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">QUICK VIEW</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <img src="./img/garden-plants-product-10.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                                        <div class="flex border rounded-b-md xl:hidden">
+                                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                                
+                                        </div>
+                                    </div>
+                                    <div class="py-4 text-center">
+                                        <h1 class="text-[#262626] font-semibold">Peperomia obtusifolia</h1>
+                                        <h2 class="text-[#828282]">$41.00 - $53.00</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-[50px]">
+        <div class="max-w-[var(--max-width-calc)] mx-auto">
+            <h1 class="text-[28px] xl:text-[38px] font-bold text-[#145333] text-center pb-[40px] xl:pb-[60px] leading-[32px]">Explore the latest shopping related offers</h1>
+            <div class="flex flex-wrap ">
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 lg:px-4 hover:-translate-y-1.5 ease-in duration-300">
+                    <div class="bg-[#145333] p-[30px] rounded flex items-center justify-between xl:flex-row flex-col space-y-4">
+                        <div class="xl:text-start text-center">
+                            <h3 class="text-[19px] text-white font-medium">Season Sale</h3>
+                            <h4 class="text-[#88aa9a]">Popular collections</h4>
+                        </div>
+                        
+                        <div>
+                            <button type="button" class="text-[12px] font-medium bg-white rounded-full py-2 px-4 border-2 border-white hover:bg-transparent hover:text-white ease-out duration-500">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 lg:px-4 hover:-translate-y-1.5 ease-in duration-300">
+                    <div class="bg-[#145333] p-[30px] rounded flex items-center justify-between xl:flex-row flex-col space-y-4">
+                        <div class="xl:text-start text-center">
+                            <h3 class="text-[19px] text-white font-medium">Hot under $50</h3>
+                            <h4 class="text-[#88aa9a]">Trending this week</h4>
+                        </div>
+                        
+                        <div>
+                            <button type="button" class="text-[12px] font-medium bg-white rounded-full py-2 px-4 border-2 border-white hover:bg-transparent hover:text-white ease-out duration-500">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 lg:px-4 hover:-translate-y-1.5 ease-in duration-300">
+                    <div class="bg-[#145333] p-[30px] rounded flex items-center justify-between xl:flex-row flex-col space-y-4">
+                        <div class="xl:text-start text-center">
+                            <h3 class="text-[19px] text-white font-medium">New arrivals</h3>
+                            <h4 class="text-[#88aa9a]">Season collections</h4>
+                        </div>
+                        
+                        <div>
+                            <button type="button" class="text-[12px] font-medium bg-white rounded-full py-2 px-4 border-2 border-white hover:bg-transparent hover:text-white ease-out duration-500">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 lg:px-4 hover:-translate-y-1.5 ease-in duration-300">
+                    <div class="bg-[#145333] p-[30px] rounded flex items-center justify-between xl:flex-row flex-col space-y-4">
+                        <div class="xl:text-start text-center">
+                            <h3 class="text-[19px] text-white font-medium">Flat 70% off</h3>
+                            <h4 class="text-[#88aa9a]">Last chance sale</h4>
+                        </div>
+                        
+                        <div>
+                            <button type="button" class="text-[12px] font-medium bg-white rounded-full py-2 px-4 border-2 border-white hover:bg-transparent hover:text-white ease-out duration-500">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-[50px] pb-[80px]">
+        <div class="container mx-auto">
+            <div class="pb-[36px] lg:pb-[60px] text-center">
+                <h1 class="text-[#51534e] font-medium border-b-2 border-[#c9cec7] w-max mx-auto ">GET OFF 10% ALL PLANTS</h1>
+                <h2 class="text-[#145333] text-[28px] lg:text-[36px] xl:text-[45px] font-bold">Your best picks</h2>
+            </div>
+            <div class="flex flex-wrap">
+                <a href="#" class="w-1/2 lg:w-1/3 xl:w-1/4 px-[15px] group/card">
+                    <div class="relative overflow-hidden rounded">
+                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                </div>
+                            </button>
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">QUICK VIEW</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="./img/garden-plants-product-01.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                        <div class="flex border rounded-b-md xl:hidden">
+                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                
+                        </div>
+                    </div>
+                    <div class="py-4 text-center">
+                        <h1 class="text-[#262626] font-semibold">Pothos hanging basket</h1>
+                        <h2 class="text-[#828282]">$38.00 - $53.00</h2>
+                    </div>
+                </a>
+                <a href="#" class="w-1/2 lg:w-1/3 xl:w-1/4 px-[15px] group/card">
+                    <div class="relative overflow-hidden rounded">
+                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                </div>
+                            </button>
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">QUICK VIEW</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="./img/garden-plants-product-02.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                        <div class="flex border rounded-b-md xl:hidden">
+                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                
+                        </div>
+                    </div>
+                    <div class="py-4 text-center">
+                        <h1 class="text-[#262626] font-semibold">Large bird of paradise</h1>
+                        <h2 class="text-[#828282]">$49.00
+                            –
+                            $67.00</h2>
+                    </div>
+                </a>
+                <a href="#" class="w-1/2 lg:w-1/3 xl:w-1/4 px-[15px] group/card">
+                    <div class="relative overflow-hidden rounded">
+                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                </div>
+                            </button>
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">QUICK VIEW</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="./img/garden-plants-product-04.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                        <div class="flex border rounded-b-md xl:hidden">
+                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                
+                        </div>
+                    </div>
+                    <div class="py-4 text-center">
+                        <h1 class="text-[#262626] font-semibold">ZZ plant supernova</h1>
+                        <h2 class="text-[#828282]">$36.00
+                            –
+                            $46.00</h2>
+                    </div>
+                </a>
+                <a href="#" class="w-1/2 lg:w-1/3 xl:w-1/4 px-[15px] group/card">
+                    <div class="relative overflow-hidden rounded">
+                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                </div>
+                            </button>
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">QUICK VIEW</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="./img/garden-plants-product-05.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                        <div class="flex border rounded-b-md xl:hidden">
+                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                
+                        </div>
+                    </div>
+                    <div class="py-4 text-center">
+                        <h1 class="text-[#262626] font-semibold">Bird’s nest fern</h1>
+                        <h2 class="text-[#828282]">$45.00
+                            –
+                            $63.00</h2>
+                    </div>
+                </a>
+                <a href="#" class="w-1/2 lg:w-1/3 xl:w-1/4 px-[15px] group/card">
+                    <div class="relative overflow-hidden rounded">
+                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                </div>
+                            </button>
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">QUICK VIEW</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="./img/garden-plants-product-06.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                        <div class="flex border rounded-b-md xl:hidden">
+                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                
+                        </div>
+                    </div>
+                    <div class="py-4 text-center">
+                        <h1 class="text-[#262626] font-semibold">Large monstera deliciosa</h1>
+                        <h2 class="text-[#828282]">$39.00
+                            –
+                            $49.00</h2>
+                    </div>
+                </a>
+                <a href="#" class="w-1/2 lg:w-1/3 xl:w-1/4 px-[15px] group/card">
+                    <div class="relative overflow-hidden rounded">
+                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                </div>
+                            </button>
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">QUICK VIEW</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="./img/garden-plants-product-07.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                        <div class="flex border rounded-b-md xl:hidden">
+                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                
+                        </div>
+                    </div>
+                    <div class="py-4 text-center">
+                        <h1 class="text-[#262626] font-semibold">Large peace lily</h1>
+                        <h2 class="text-[#828282]">$46.00
+                            –
+                            $59.00</h2>
+                    </div>
+                </a>
+                <a href="#" class="w-1/2 lg:w-1/3 xl:w-1/4 px-[15px] group/card">
+                    <div class="relative overflow-hidden rounded">
+                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                </div>
+                            </button>
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">QUICK VIEW</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="./img/garden-plants-product-08.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                        <div class="flex border rounded-b-md xl:hidden">
+                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                
+                        </div>
+                    </div>
+                    <div class="py-4 text-center">
+                        <h1 class="text-[#262626] font-semibold">Large calathea wavestar</h1>
+                        <h2 class="text-[#828282]">$39.00
+                            –
+                            $46.00</h2>
+                    </div>
+                </a>
+                <a href="#" class="w-1/2 lg:w-1/3 xl:w-1/4 px-[15px] group/card">
+                    <div class="relative overflow-hidden rounded">
+                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                        </div>
+                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                </div>
+                            </button>
+                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                    <p class="text-[11px]">QUICK VIEW</p>
+                                </div>
+                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="./img/garden-plants-product-09.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                        <div class="flex border rounded-b-md xl:hidden">
+                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                
+                        </div>
+                    </div>
+                    <div class="py-4 text-center">
+                        <h1 class="text-[#262626] font-semibold">Snake plant laurentii</h1>
+                        <h2 class="text-[#828282]">$29.00
+                            –
+                            $37.00</h2>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="pt-[40px] flex justify-center">
+                <a href="#" class="text-[14px] font-medium border border-[#262626] py-3 px-6 rounded-full min-w-[180px] inline-flex justify-center items-center hover:bg-[#262626] hover:text-white ease-in-out duration-300">LOAD MORE</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="w-full bg-[url('/img/demo-garden-plants-video.webp')] h-[360px] lg:h-[625px] bg-no-repeat bg-auto bg-center flex flex-col justify-center items-center">   
+            <div class="relative">
+                <div class="absolute w-[60px] h-[60px] lg:h-[100px] lg:w-[100px] rounded-full bg-white custom-animate-ping z-0"></div>
+                <button class="bg-white p-4 lg:p-[36px] rounded-full z-20 relative play-btn">
+                    <i data-feather="play" class="text-[#145333] fill-[#145333] w-[28px] h-[28px]"></i>
+                </button>
+            </div>     
+            
+            <div class="max-w-xl text-center py-[30px]">
+                <h1 class="text-[42px] lg:text-[70px] font-bold text-white leading-[50px] lg:leading-[72px]">Let make a fresh and green life</h1>
+            </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <iframe width="900" height="506" src="https://www.youtube.com/embed/CiQovCRvvm0?si=kU30SvVM9bwjJpBo" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section>
+        <div class="border-b py-[30px]">
+            <div class="marquee">
+                <div class="marquee__inner flex" aria-hidden="true">
+                    <span class="text-[#262626] font-semibold flex items-center whitespace-nowrap"><div class="mr-[50px] ml-[30px] w-[25px] h-[1px] bg-[#262626]"></div>NEW AND EXCLUSIVE COLLECTION</span>
+                    <span class="text-[#262626] font-semibold flex items-center whitespace-nowrap"><div class="mr-[50px] ml-[30px] w-[25px] h-[1px] bg-[#262626]"></div>MID SEASON SALE UP TO 50% OFF</span>
+                    <span class="text-[#262626] font-semibold flex items-center whitespace-nowrap"><div class="mr-[50px] ml-[30px] w-[25px] h-[1px] bg-[#262626]"></div>FEEL AMAZING EVERYDAY WITH HONGO</span>
+                    <span class="text-[#262626] font-semibold flex items-center whitespace-nowrap"><div class="mr-[50px] ml-[30px] w-[25px] h-[1px] bg-[#262626]"></div>SALE UP TO 70% OFF END OF SEASON</span>
+                    <span class="text-[#262626] font-semibold flex items-center whitespace-nowrap"><div class="mr-[50px] ml-[30px] w-[25px] h-[1px] bg-[#262626]"></div>NEW AND EXCLUSIVE COLLECTION</span>
+                </div>
+                <div class="marquee__inner flex" aria-hidden="true">
+                    <span class="text-[#262626] font-semibold flex items-center whitespace-nowrap"><div class="mr-[50px] ml-[30px] w-[25px] h-[1px] bg-[#262626]"></div>NEW AND EXCLUSIVE COLLECTION</span>
+                    <span class="text-[#262626] font-semibold flex items-center whitespace-nowrap"><div class="mr-[50px] ml-[30px] w-[25px] h-[1px] bg-[#262626]"></div>MID SEASON SALE UP TO 50% OFF</span>
+                    <span class="text-[#262626] font-semibold flex items-center whitespace-nowrap"><div class="mr-[50px] ml-[30px] w-[25px] h-[1px] bg-[#262626]"></div>FEEL AMAZING EVERYDAY WITH HONGO</span>
+                    <span class="text-[#262626] font-semibold flex items-center whitespace-nowrap"><div class="mr-[50px] ml-[30px] w-[25px] h-[1px] bg-[#262626]"></div>SALE UP TO 70% OFF END OF SEASON</span>
+                    <span class="text-[#262626] font-semibold flex items-center whitespace-nowrap"><div class="mr-[50px] ml-[30px] w-[25px] h-[1px] bg-[#262626]"></div>NEW AND EXCLUSIVE COLLECTION</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto pt-[60px] pb-[80px]">
+            <div class="pb-[32px] lg:pb-[60px] text-center">
+                <h1 class="text-[#51534e] font-medium border-b-2 border-[#c9cec7] w-max mx-auto ">FIND PLANTS YOU'LL LOVE</h1>
+                <h2 class="text-[#145333] text-[28px] lg:text-[36px] xl:text-[45px] font-bold">Popular categories</h2>
+            </div>
+            <div class="flex flex-wrap pb-[50px]">
+                <div class="w-full md:w-1/2 xl:w-1/4 p-4 xl:px-[25px] group/card hover:-translate-y-2 duration-300 ease-in-out cursor-pointer">
+                    <div class="overflow-hidden rounded-md">
+                        <img src="./img/demo-garden-plants-categories-img-01.jpg" class="w-full" alt="">
+                    </div>
+                    <div class="flex relative py-[18px] items-center justify-between relative border-b border-black after:content-[''] after:h-[2px] after:w-0 after:bg-[#145333] after:absolute after:bottom-[-1px] after:duration-500 after:ease-in-out group-hover/card:after:w-full group-hover/card:border-none">
+                        <h1 class="text-[20px] text-[#1d2019] font-medium">For Beginners</h1>
+                        <i data-feather="arrow-right" class="text-[#1d2019] group-hover/card:opacity-0 duration-500 ease-in"></i>
+                        <span class="absolute bg-[#145333] text-[12px] text-white py-[5px] px-[15px] rounded-full right-0 opacity-0 group-hover/card:opacity-100 duration-300 ease-in">
+                            14 ITEMS
+                        </span>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 xl:w-1/4 p-4 xl:px-[25px] group/card hover:-translate-y-2 duration-300 ease-in-out cursor-pointer">
+                    <div class="overflow-hidden rounded-md">
+                        <img src="./img/demo-garden-plants-categories-img-02.jpg" class="w-full" alt="">
+                    </div>
+                    <div class="flex relative py-[18px] items-center justify-between relative border-b border-black after:content-[''] after:h-[2px] after:w-0 after:bg-[#145333] after:absolute after:bottom-[-1px] after:duration-500 after:ease-in-out group-hover/card:after:w-full group-hover/card:border-none">
+                        <h1 class="text-[20px] text-[#1d2019] font-medium">Flowering Plants</h1>
+                        <i data-feather="arrow-right" class="text-[#1d2019] group-hover/card:opacity-0 duration-500 ease-in"></i>
+                        <span class="absolute bg-[#145333] text-[12px] text-white py-[5px] px-[15px] rounded-full right-0 opacity-0 group-hover/card:opacity-100 duration-300 ease-in">
+                            12 ITEMS
+                        </span>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 xl:w-1/4 p-4 xl:px-[25px] group/card hover:-translate-y-2 duration-300 ease-in-out cursor-pointer">
+                    <div class="overflow-hidden rounded-md">
+                        <img src="./img/demo-garden-plants-categories-img-03.jpg" class="w-full" alt="">
+                    </div>
+                    <div class="flex relative py-[18px] items-center justify-between relative border-b border-black after:content-[''] after:h-[2px] after:w-0 after:bg-[#145333] after:absolute after:bottom-[-1px] after:duration-500 after:ease-in-out group-hover/card:after:w-full group-hover/card:border-none">
+                        <h1 class="text-[20px] text-[#1d2019] font-medium">Decor Plants</h1>
+                        <i data-feather="arrow-right" class="text-[#1d2019] group-hover/card:opacity-0 duration-500 ease-in"></i>
+                        <span class="absolute bg-[#145333] text-[12px] text-white py-[5px] px-[15px] rounded-full right-0 opacity-0 group-hover/card:opacity-100 duration-300 ease-in">
+                            15 ITEMS
+                        </span>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 xl:w-1/4 p-4 xl:px-[25px] group/card hover:-translate-y-2 duration-300 ease-in-out cursor-pointer">
+                    <div class="overflow-hidden rounded-md">
+                        <img src="./img/demo-garden-plants-categories-img-01.jpg" class="w-full" alt="">
+                    </div>
+                    <div class="flex relative py-[18px] items-center justify-between relative border-b border-black after:content-[''] after:h-[2px] after:w-0 after:bg-[#145333] after:absolute after:bottom-[-1px] after:duration-500 after:ease-in-out group-hover/card:after:w-full group-hover/card:border-none">
+                        <h1 class="text-[20px] text-[#1d2019] font-medium">Pet friendly plants</h1>
+                        <i data-feather="arrow-right" class="text-[#1d2019] group-hover/card:opacity-0 duration-500 ease-in"></i>
+                        <span class="absolute bg-[#145333] text-[12px] text-white py-[5px] px-[15px] rounded-full right-0 opacity-0 group-hover/card:opacity-100 duration-300 ease-in">
+                            13 ITEMS
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row pt-[50px] space-y-4 px-5">
+                <div class="w-full lg:w-1/2 bg-[url(/img/demo-garden-plants-bg-02.avif)] bg-auto bg-no-repeat p-5 lg:pl-10 pt-5 flex items-center mx-[15px]">
+                    <div class="lg:w-1/2">
+                        <img src="./img/demo-garden-plants-img-02.avif" alt="" srcset="">
+                    </div>
+                    <div class="pl-[45px]">
+                        <h1 class="text-[18px] text-[#262626]">Delivery to your door We’ll bring your plants to your door, anywhere in Hongo</h1>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 bg-[url(/img/demo-garden-plants-bg-02.avif)] bg-auto bg-no-repeat p-5 lg:pl-10 pt-5 flex items-center mx-[15px]">
+                    <div class="lg:w-1/2">
+                        <img src="./img/demo-garden-plants-img-03.webp" alt="" srcset="">
+                    </div>
+                    <div class="pl-[45px]">
+                        <h1 class="text-[18px] text-[#262626]">All the help you need We’ll send you a free plant-parenting course</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="max-w-[var(--max-width-calc)] mx-auto">
+            <div class="flex flex-col md:flex-row px-[15px]">
+                <div class="w-full md:w-1/3 xl:w-1/4">
+                    <img src="./img/demo-garden-plants-img-04.jpg" class="w-full h-full object-cover" alt="" srcset="">
+                </div>
+                <div class="w-full md:w-2/3 xl:w-3/4 bg-[#f4f9f3] rounded-r-[16px] py-[40px] pl-[32px] pr-[48px] xl:py-[70px] xl:pl-[55px] xl:pr-[85px]">
+                    <div class="flex flex-col md:flex-row justify-center md:justify-between items-center space-y-3 md:space-y-0 space-x-3">
+                        <div class="w-full flex flex-col xl:flex-row xl:justify-between items-center">
+                            <h2 class="text-[#145333] text-3xl xl:text-[45px] font-bold">Deal of the day</h2>
+                            <h1 class="font-medium">Most demanded products.</h1>
+                        </div>
+                        <div class="buttons flex items-center">
+                            <button id="left" class="bg-white border w-[40px] h-[40px] flex justify-center items-center"><i data-feather="chevron-left" class="icon"></i></button>
+                            <button id="right" class="bg-white border w-[40px] h-[40px] flex justify-center items-center"><i data-feather="chevron-right" class="icon"></i></button>
+                        </div>
+                    </div>
+                    <div class="py-[50px]">
+                        <div class="carousel scroll-smooth flex w-full overflow-x-hidden relative">
+                            <div class="slide flex-[0_0_auto] w-full md:w-1/2 xl:w-1/4 px-[15px]">
+                                <a href="#" class="group/card">
+                                    <div class="relative overflow-hidden rounded">
+                                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                                </div>
+                                            </button>
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">QUICK VIEW</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <img src="./img/garden-plants-product-01.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                                        <div class="flex border rounded-b-md xl:hidden">
+                                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-4 text-center">
+                                        <h1 class="text-[#262626] font-semibold">Pothos hanging basket</h1>
+                                        <h2 class="text-[#828282]">$38.00 - $53.00</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide flex-[0_0_auto] w-full md:w-1/2 xl:w-1/4 px-[15px]">
+                                <a href="#" class="group/card">
+                                    <div class="relative overflow-hidden rounded">
+                                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                                </div>
+                                            </button>
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">QUICK VIEW</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <img src="./img/garden-plants-product-02.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                                        <div class="flex border rounded-b-md xl:hidden">
+                                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-4 text-center">
+                                        <h1 class="text-[#262626] font-semibold">Large bird of paradise</h1>
+                                        <h2 class="text-[#828282]">$49.00
+                                            –
+                                            $67.00</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide flex-[0_0_auto] w-full md:w-1/2 xl:w-1/4 px-[15px]">
+                                <a href="#" class="group/card">
+                                    <div class="relative overflow-hidden rounded">
+                                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                                </div>
+                                            </button>
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">QUICK VIEW</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <img src="./img/garden-plants-product-04.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                                        <div class="flex border rounded-b-md xl:hidden">
+                                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-4 text-center">
+                                        <h1 class="text-[#262626] font-semibold">ZZ plant supernova</h1>
+                                        <h2 class="text-[#828282]">
+                                            $36.00
+                                            –
+                                            $46.00</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide flex-[0_0_auto] w-full md:w-1/2 xl:w-1/4 px-[15px]">
+                                <a href="#" class="group/card">
+                                    <div class="relative overflow-hidden rounded">
+                                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                                </div>
+                                            </button>
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">QUICK VIEW</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <img src="./img/garden-plants-product-05.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                                        <div class="flex border rounded-b-md xl:hidden">
+                                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-4 text-center">
+                                        <h1 class="text-[#262626] font-semibold">Bird’s nest fern</h1>
+                                        <h2 class="text-[#828282]">
+                                            $45.00
+                                            –
+                                            $63.00</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide flex-[0_0_auto] w-full md:w-1/2 xl:w-1/4 px-[15px]">
+                                <a href="#" class="group/card">
+                                    <div class="relative overflow-hidden rounded">
+                                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="heart" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                                            <button type="button" class="bg-white p-3 rounded-full"><i data-feather="layers" class="w-[14px] h-[14px]"></i></button>
+                                        </div>
+                                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                                </div>
+                                            </button>
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">QUICK VIEW</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <img src="./img/garden-plants-product-06.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                                        <div class="flex border rounded-b-md xl:hidden">
+                                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-4 text-center">
+                                        <h1 class="text-[#262626] font-semibold">Large monstera deliciosa</h1>
+                                        <h2 class="text-[#828282]">
+                                            $39.00
+                                            –
+                                            $49.00
+                                        </h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto py-[80px]  px-10 xl:px-[56px] space-y-5 flex flex-col border-b">
+            <h1 class="text-[#51534e] font-medium border-b-2 border-[#c9cec7] w-max mx-auto">QUOTE OF THE WEEK</h1>
+            <h1 id="text" class="text-[#1d2019] text-[27px] lg:text-[38px] font-bold leading-[43px] max-w-3xl mx-auto text-center"></h1>
+            <div class="item-container flex items-center flex-wrap justify-center xl:justify-between">
+                <div id="item1" class="flex flex-col items-center cursor-pointer px-6 py-3">
+                    <div>
+                        <img src="./img/Trusted-shops-logo.svg" class="contrast-[.05]" alt="" srcset="">
+                    </div>
+                    <div class="opacity-0 mt-1 w-min bg-[#ffae00] flex items-center justify-center py-1 pr-1 pl-4 rounded-full space-x-1">
+                        <div class="flex items-center">
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                        </div>
+                        <div class="bg-black text-[11px] text-white font-medium px-2 py-[2px] rounded-full">
+                            5.0
+                        </div>
+                    </div>
+                </div>
+                <div id="item2" class="flex flex-col items-center cursor-pointer px-6 py-3">
+                    <div>
+                        <img src="./img/Trustpilot-logo.svg" class="contrast-[.05]" alt="" srcset="">
+                    </div>
+                    
+                    <div class="opacity-0 mt-1 w-min bg-[#ffae00] flex items-center justify-center py-1 pr-1 pl-4 rounded-full space-x-1">
+                        <div class="flex items-center">
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                        </div>
+                        <div class="bg-black text-[11px] text-white font-medium px-2 py-[2px] rounded-full">
+                            5.0
+                        </div>
+                    </div>
+                </div>
+                <div id="item3" class="flex flex-col items-center cursor-pointer px-6 py-3">
+                    <div>
+                        <img src="./img/glassdoor-logo.svg" class="contrast-[.05]" alt="" srcset="">
+                    </div>
+                    
+                    <div class="opacity-0 mt-1 w-min bg-[#ffae00] flex items-center justify-center py-1 pr-1 pl-4 rounded-full space-x-1">
+                        <div class="flex items-center">
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                        </div>
+                        <div class="bg-black text-[11px] text-white font-medium px-2 py-[2px] rounded-full">
+                            5.0
+                        </div>
+                    </div>
+                </div>
+                <div id="item4" class="flex flex-col items-center cursor-pointer px-6 py-3">
+                    <div>
+                        <img src="./img/google-customer-reviews.svg" class="contrast-[.05]" alt="" srcset="">
+                    </div>
+                    
+                    <div class="opacity-0 mt-1 w-min bg-[#ffae00] flex items-center justify-center py-1 pr-1 pl-4 rounded-full space-x-1">
+                        <div class="flex items-center">
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                        </div>
+                        <div class="bg-black text-[11px] text-white font-medium px-2 py-[2px] rounded-full">
+                            5.0
+                        </div>
+                    </div>
+                </div>
+                <div id="item5" class="flex flex-col items-center cursor-pointer px-6 py-3">
+                    <div>
+                        <img src="./img/Yotpo-logo.svg" class="contrast-[.05]" alt="" srcset="">
+                    </div>
+                    
+                    <div class="opacity-0 mt-1 w-min bg-[#ffae00] flex items-center justify-center py-1 pr-1 pl-4 rounded-full space-x-1">
+                        <div class="flex items-center">
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                            <i data-feather="star" class="fill-white w-[11px] text-white"></i>
+                        </div>
+                        <div class="bg-black text-[11px] text-white font-medium px-2 py-[2px] rounded-full">
+                            5.0
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto py-[80px] px-4">
+            <div class="flex lg:flex-row flex-col items-center space-y-4 lg:space-y-0 lg:divide-x mb-6">
+                <div class="px-4 w-full flex flex-col lg:flex-row lg:justify-between items-center">
+                    <h2 class="text-[#145333] text-3xl xl:text-[45px] font-bold">Latest articles</h2>
+                    <h1 class="font-medium text-[#51534e]">More for you, feel balanced</h1>
+                </div>
+                <div class="px-4 ">
+                    <button class="text-sm font-medium px-4 py-3 whitespace-nowrap bg-[#145333] text-white rounded-full border-2 border-[#145333] hover:bg-transparent hover:text-[#1d2019] duration-300 ease-in-out">Read all article</button>
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0">
+                <a href="#" class="w-full lg:w-1/2 lg:pr-14 group/blog">
+                    <div class="relative rounded-md overflow-hidden mb-6">
+                        <img src="./img/demo-garden-plants-blog-01.jpg" class="w-full group-hover/blog:scale-110 duration-500 ease-in-out" alt="">
+                        <div class="bg-white py-3 px-4 text-sm font-semibold absolute z-20 bottom-0">
+                            GARDENING
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-[26px] font-bold text-[#262626]">A beautiful plant is like having a friend around the house.</h1>
+                    </div>
+                </a>
+                <div class="w-full lg:w-1/2 flex flex-col space-y-8">
+                    <a href="#" class="flex md:flex-row flex-col items-center space-y-4 md:space-y-0 md:space-x-[35px]">
+                        <div class="w-full md:w-1/3 rounded-md overflow-hidden">
+                            <img src="./img/demo-garden-plants-blog-02.jpg" alt="" srcset="">
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <h3 class="font-semibold text-[#828282] text-[14px]">GARDENING</h3>
+                            <h2 class="text-[20px] text-[#262626] font-semibold">Unemployment is capitalism's way of getting you to plant a garden.</h2>
+                        </div>
+                    </a>
+                    <a href="#" class="flex md:flex-row flex-col items-center space-y-4 md:space-y-0 md:space-x-[35px]">
+                        <div class="w-full md:w-1/3 rounded-md overflow-hidden">
+                            <img src="./img/demo-garden-plants-blog-03.jpg" alt="" srcset="">
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <h3 class="font-semibold text-[#828282] text-[14px]">GARDENING</h3>
+                            <h2 class="text-[20px] text-[#262626] font-semibold">A man doesn't plant a tree for himself. He plants it for posterity.</h2>
+                        </div>
+                    </a>
+                    <a href="#" class="flex md:flex-row flex-col items-center space-y-4 md:space-y-0 md:space-x-[35px]">
+                        <div class="w-full md:w-1/3 rounded-md overflow-hidden">
+                            <img src="./img/demo-garden-plants-blog-04.jpg" alt="" srcset="">
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <h3 class="font-semibold text-[#828282] text-[14px]">GARDENING</h3>
+                            <h2 class="text-[20px] text-[#262626] font-semibold">Plant and your spouse plants with you weed and you weed alone.</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <section class="w-full bg-[#f4f9f3] py-[50px]">
+        <div class="container mx-auto flex flex-wrap justify-center lg:justify-between">
+            <div class="w-1/2 md:w-1/4 flex items-center space-x-4 p-5 md:px-[15px]">
+                <i data-feather="package" class="text-[#145333] w-[50px] h-[50px]"></i>
+                <div>
+                    <h1 class="text-[18px] font-semibold text-[#262626]">Free shipping</h1>
+                    <h3 class="text-[#828282]">Standard shipping</h3>
+                </div>
+            </div>
+              
+            <div class="w-1/2 md:w-1/4 flex items-center space-x-4 p-5 md:px-[15px]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-[#145333] w-[50px] h-[50px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                </svg>
+                
+                <div>
+                    <h1 class="text-[18px] font-semibold text-[#262626]">Special discounts</h1>
+                    <h3 class="text-[#828282]">Guaranteed saving</h3>
+                </div>
+            </div>
+
+            <div class="w-1/2 md:w-1/4 flex items-center space-x-4 p-5 md:px-[15px]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-[#145333] w-[50px] h-[50px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3" />
+                </svg>
+                  
+                <div>
+                    <h1 class="text-[18px] font-semibold text-[#262626]">
+                        Buyers protection</h1>
+                    <h3 class="text-[#828282]">Secure payment</h3>
+                </div>
+            </div>
+
+            <div class="w-1/2 md:w-1/4 flex items-center space-x-4 p-5 md:px-[15px]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-[#145333] w-[50px] h-[50px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                  </svg>
+                  
+                  
+                <div>
+                    <h1 class="text-[18px] font-semibold text-[#262626]">Customer service</h1>
+                    <h3 class="text-[#828282]">Give us feedback</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="bg-[url(/img/demo-garden-plants-footer-bg.webp)] bg-no-repeat bg-cover bg-center">
+    <div class="w-full border-b border-[#264c3a]">
+        <div class="container mx-auto">
+            <div class="py-20 grid grid-cols-12">
+                <div class="col-span-12 md:col-span-6 lg:col-span-2 p-2">
+                    <h1 class="font-semibold text-white mb-2">Categories</h1>
+                    <ul class="space-y-1">
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">For Beginners</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Flowering Plants</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Decor Plants</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Pet-friendly plants</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">All plant and Tree</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-2 p-2">
+                    <h1 class="font-semibold text-white mb-2">Quick Links</h1>
+                    <ul class="space-y-1">
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">About us</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Our services</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Latest articles</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Deal of the day</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-3 p-2">
+                    <h1 class="font-semibold text-white mb-2">Information</h1>
+                    <ul class="space-y-1">
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Order history</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Customer support</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Terms & conditions</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Resturns & exchanges</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Shipping & delivery</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-5 p-2 lg:py-2 lg:pr-2 lg:pl-[135px] space-y-4">
+                    <div>
+                        <h1 class="font-bold text-[32px] text-white">Subscribe to newsletter</h1>
+                        <h3 class="text-[#ffffff4d]">Sign up and enjoy 10% off your first order.</h3>
+                    </div>
+                    <div>
+                        <form action="#" method="post" class="relative">
+                            <input class="px-0 bg-transparent text-white border-x-0 border-t-0 border-b-2 border-[#ffffff66] w-full placeholder:text-[#ffffff66] placeholder:font-light focus:ring-0" placeholder="Enter your email" type="email" name="" id="" required>
+                            <button type="submit" class="bg-transparent border-0 absolute top-1/2 -translate-y-1/2 right-0 p-[15px]"><i data-feather="mail" class="text-white w-[16px]"></i></button>
+                        </form>
+                        
+                    </div>
+                    <div>
+                        <img src="./img/demo-garden-plants-footer-payment-icon.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full">
+        <div class="container mx-auto py-[25px] flex flex-col space-y-4 lg:space-y-0 lg:flex-row items-center justify-between">
+            <div class="flex items-center flex-col md:flex-row lg:divide-x divide-[#264c3a]">
+                <div class="p-2 md:pr-8">
+                    <img src="./img/demo-garden-plants-footer-logo.svg" alt="">
+                </div>
+                <div class="p-2 md:pl-8">
+                    <h1 class="text-[#ffffff4d] text-sm">© 2024 Hongo is proudly powered by <a href="#" class="hover:text-white duration-300 ease-in-out underline">ThemeZaa</a></h1>
+                </div>
+            </div>
+            <div class="flex space-x-3">
+                <span class="font-semibold text-[#ffffff4d]"><a href="#">Fb.</a></span>
+                <span class="font-semibold text-[#ffffff4d]"><a href="#">Tw.</a></span>
+                <span class="font-semibold text-[#ffffff4d]"><a href="#">Ig.</a></span>
+                <span class="font-semibold text-[#ffffff4d]"><a href="#">Pt.</a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+<script>
+    feather.replace();
+    
+</script>
+<script src="./js/script.js"></script>
+<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+
+</body>
+</html>

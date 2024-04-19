@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="./css/output.css">
+    <title>Hongo</title>
+    
+</head>
+<body>
+<!-- Navbar Starts here -->
+<div class="w-full bg-[#145333]">
+    <div class="max-w-[var(--max-width-calc)] flex justify-center py-2">
+        <h1 class="text-white text-[11px] text-center lg:text-[16px]">Happiness is availing great offers on hongo, Free shipping on all india delivery.</h1>
+    </div>
+</div>
+<nav id="target-element" class="bg-white z-20 top-0 start-0 w-full z-50">
+    <div class="max-w-[var(--max-width-calc)] flex flex-wrap items-center mx-auto md:px-4 justify-between">
+        <a href="./" class="xl:flex items-center space-x-3 rtl:space-x-reverse hidden">
+            <img src="./img/demo-garden-plants-logo.svg" class="h-8" alt="Hongo Logo" />
+        </a>
+        <div class="flex items-center md:gap-2">
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <a href="#" class="xl:hidden block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="search"></i> <span class="xl:block hidden">Search</span></a>
+        </div>
+        
+        <a href="./" class="xl:hidden items-center space-x-3 rtl:space-x-reverse flex">
+            <img src="./img/demo-garden-plants-logo.svg" class="h-8" alt="Hongo Logo" />
+        </a>
+        <div class="ml-[50px] hidden w-full xl:block xl:w-auto" id="navbar-default">
+            <ul class="xl:before:content-[''] xl:before:h-[20px] xl:before:my-[25px] xl:before:w-[1px] xl:before:bg-[#1d20194d] xl:before:translate-x-[-25px] xl:before:translate-y-[2px] font-medium flex flex-col p-4 xl:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 xl:flex-row xl:space-x-8 rtl:space-x-reverse xl:mt-0 xl:border-0 xl:bg-white">
+                <li>
+                    <a href="/" class="block px-3 bg-blue-700 rounded md:bg-transparent md:text-textCol navbar-link md:py-[25px]" aria-current="page">Demo</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Product</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Hot deals</a>
+                </li>
+                <li class="relative">
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">
+                        Pages
+                    </a>
+                    <div class="absolute z-10 font-normal bg-white divide-y divide-gray-100 shadow w-44 top-[70px] navdropdown opacity-0 duration-300 ease-in-out">
+                        <ul class="p-5 text-sm text-gray-700">
+                          <li>
+                            <a href="about.html" class="block px-4 py-2 text-gray-600 hover:text-gray-900">About us</a>
+                          </li>
+                          <li>
+                            <a href="contact.html" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Contact us</a>
+                          </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Blog</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Features</a>
+                </li>
+            </ul>
+        </div>
+        <div class="xl:ml-auto">
+            <ul class="font-medium flex p-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-4 rtl:space-x-reverse mt-0 border-0 bg-white">
+            
+                <li class="xl:block hidden">
+                    <a href="#" class="block px-3 bg-blue-700 rounded bg-transparent text-textCol p-0 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="search"></i> <span class="xl:block hidden">Search</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="user"></i> <span class="xl:block hidden">Account</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="heart"></i> <span class="xl:block hidden">Wishlist</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="shopping-bag"></i> <span class="xl:block hidden">Cart</span></a>
+                </li>
+            </ul>
+        </div>  
+    </div>
+</nav>
+<nav id="trigger-element" class="bg-white fixed z-20 top-0 start-0 w-full z-50">
+    <div class="max-w-[var(--max-width-calc)] flex flex-wrap items-center mx-auto md:px-4 justify-between">
+        <a href="./" class="xl:flex items-center space-x-3 rtl:space-x-reverse hidden">
+            <img src="./img/demo-garden-plants-logo.svg" class="h-8" alt="Hongo Logo" />
+        </a>
+        <div class="flex items-center md:gap-2">
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <a href="#" class="xl:hidden block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="search"></i> <span class="xl:block hidden">Search</span></a>
+        </div>
+        
+        <a href="./" class="xl:hidden items-center space-x-3 rtl:space-x-reverse flex">
+            <img src="./img/demo-garden-plants-logo.svg" class="h-8" alt="Hongo Logo" />
+        </a>
+        <div class="ml-[50px] hidden w-full xl:block xl:w-auto" id="navbar-default">
+            <ul class="xl:before:content-[''] xl:before:h-[20px] xl:before:my-[25px] xl:before:w-[1px] xl:before:bg-[#1d20194d] xl:before:translate-x-[-25px] xl:before:translate-y-[2px] font-medium flex flex-col p-4 xl:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 xl:flex-row xl:space-x-8 rtl:space-x-reverse xl:mt-0 xl:border-0 xl:bg-white">
+                <li>
+                    <a href="/" class="block px-3 bg-blue-700 rounded md:bg-transparent md:text-textCol navbar-link md:py-[25px]" aria-current="page">Demo</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Product</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Hot deals</a>
+                </li>
+                <li class="relative">
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">
+                        Pages
+                    </a>
+                    <div class="absolute z-10 font-normal bg-white divide-y divide-gray-100 shadow w-44 top-[70px] navdropdown opacity-0 duration-300 ease-in-out">
+                        <ul class="p-5 text-sm text-gray-700">
+                          <li>
+                            <a href="about.html" class="block px-4 py-2 text-gray-600 hover:text-gray-900">About us</a>
+                          </li>
+                          <li>
+                            <a href="contact.html" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Contact us</a>
+                          </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Blog</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 navbar-link md:text-textCol md:py-[25px]">Features</a>
+                </li>
+            </ul>
+        </div>
+        <div class="xl:ml-auto">
+            <ul class="font-medium flex p-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-4 rtl:space-x-reverse mt-0 border-0 bg-white">
+            
+                <li class="xl:block hidden">
+                    <a href="#" class="block px-3 bg-blue-700 rounded bg-transparent text-textCol p-0 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="search"></i> <span class="xl:block hidden">Search</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="user"></i> <span class="xl:block hidden">Account</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="heart"></i> <span class="xl:block hidden">Wishlist</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block md:px-3 bg-blue-700 rounded bg-transparent text-textCol px-2 flex gap-1 py-[25px]" aria-current="page"><i class="w-[19px]" data-feather="shopping-bag"></i> <span class="xl:block hidden">Cart</span></a>
+                </li>
+            </ul>
+        </div>  
+    </div>
+</nav>
+<!-- Navbar Ends here -->
+<main class="">
+    <section class="w-full bg-[url('/img/demo-garden-plants-about-title-bg.webp')] bg-center bg-no-repeat bg-cover h-[155px] lg:h-[200px] flex justify-center items-center">
+        <div class="flex justify-center items-center">
+            <h1 class="text-[#145333] text-[33px] md:text-[43px] lg:text-[48px] xl:text-[55px] font-bold">About us</h1>
+        </div>
+    </section>
+
+    <section class="py-[50px]">
+        <div class="container mx-auto flex lg:flex-row flex-col lg:space-y-0 space-y-6">
+            <div class="w-full lg:w-3/5 px-4 xl:pl-4 xl:pr-14">
+                <img src="./img/demo-garden-plants-about-img-01.jpg" class="w-full rounded" alt="" srcset="">
+            </div>
+            <div class="w-full lg:w-2/5 px-4 xl:pl-14 xl:pr-4 flex flex-col justify-center items-center lg:items-start space-y-4">
+                <h1 class="text-[#51534e] font-medium border-b-2 border-[#c9cec7] w-max lg:text-start text-center">START FROM SINCE 1987</h1>
+                <h2 class="text-[#145333] text-[32px] xl:text-[45px] font-bold xl:leading-[52px] lg:text-start text-center">Journey into about hongo garden & plants.</h2>
+                <p class="text-[#828282] lg:text-start text-center">  
+                    Lorem ipsum is simply dummy to text the printing type setting industry lorem ipsum and has been industry dummy text of the simply printing industry lorem ipsum and printing type setting industry. Lorem ipsum is simply dummy to text the printing.
+                </p>
+                <button class="bg-[#145333] px-8 py-4 rounded-full border border-[#145333] text-white font-semibold hover:bg-white hover:text-gray-900 duration-500 ease-in-out lg:text-start text-center">
+                    EXPLORE PRODUCTS
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-[50px]">
+        <div class="container mx-auto flex flex-wrap ">
+            <div class="w-1/2 lg:w-1/4 p-4 lg:px-4 text-center">
+                <h1 class="text-[45px] text-[#145333] font-bold relative w-max mx-auto px-1">
+                    <span class="z-10 relative">2250</span>
+                    <span class="absolute w-full h-[10px] bg-[#daeddf] bottom-[20px] left-0 z-0"></span>
+                </h1>
+                <h2 class="text-[#828282] ">Stock products</h2>
+            </div>
+            <div class="w-1/2 lg:w-1/4 p-4 lg:px-4 text-center">
+                <h1 class="text-[45px] text-[#145333] font-bold relative w-max mx-auto px-1">
+                    <span class="z-10 relative">9565</span>
+                    <span class="absolute w-full h-[10px] bg-[#daeddf] bottom-[20px] left-0 z-0"></span>
+                </h1>
+                <h2 class="text-[#828282] ">Last year’s sales</h2>
+            </div>
+            <div class="w-1/2 lg:w-1/4 p-4 lg:px-4 text-center">
+                <h1 class="text-[45px] text-[#145333] font-bold relative w-max mx-auto px-1">
+                    <span class="z-10 relative">3640</span>
+                    <span class="absolute w-full h-[10px] bg-[#daeddf] bottom-[20px] left-0 z-0"></span>
+                </h1>
+                <h2 class="text-[#828282] ">Happy customers</h2>
+            </div>
+            <div class="w-1/2 lg:w-1/4 p-4 lg:px-4 text-center">
+                <h1 class="text-[45px] text-[#145333] font-bold relative w-max mx-auto px-1">
+                    <span class="z-10 relative">9932</span>
+                    <span class="absolute w-full h-[10px] bg-[#daeddf] bottom-[20px] left-0 z-0"></span>
+                </h1>
+                <h2 class="text-[#828282] ">Google reviews</h2>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="pb-[50px]">
+        <div class="max-w-[var(--max-width-calc)] mx-auto bg-[url(/img/demo-garden-plants-about-video-img.webp)] h-[360px] lg:h-[625px] bg-no-repeat bg-auto bg-center flex flex-col justify-center items-center">
+            <div class="relative">
+                <div class="absolute w-[60px] h-[60px] lg:h-[100px] lg:w-[100px] rounded-full bg-white custom-animate-ping z-0"></div>
+                <button class="bg-white p-4 lg:p-[36px] rounded-full z-20 relative play-btn">
+                    <i data-feather="play" class="text-[#145333] fill-[#145333] w-[28px] h-[28px]"></i>
+                </button>
+            </div>    
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <iframe width="900" height="506" src="https://www.youtube.com/embed/CiQovCRvvm0?si=kU30SvVM9bwjJpBo" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-[50px]">
+        <div class="container flex lg:flex-row flex-col mx-auto px-6 lg:px-0 lg:space-y-0 space-y-10">
+            <div class="w-full lg:w-1/2">
+                <img src="./img/demo-garden-plants-about-img-02.jpg" class="w-full" alt="" srcset="">
+            </div>
+            <div class="w-full lg:w-1/2 lg:pl-28 flex flex-col justify-center space-y-4">
+                <h1 class="text-[#51534e] font-medium border-b-2 border-[#c9cec7] w-max lg:text-start text-center">OVERVIEW OF GREENHOUSE</h1>
+                <h2 class="text-[#145333] text-[32px] xl:text-[43px] font-bold xl:leading-[52px]">Overview of hongo garden and plants greenhouse.</h2>
+                <div class="divide-y divide-gray-200">
+                    <details class="py-4">
+                        <summary class="text-[20px] text-[#262626]">
+                            Greenhouse vision.
+                            <i data-feather="plus" class="custom-chevron w-[16px] h-[16px] text-[#262626]"></i>
+                            <i data-feather="minus" class="custom-chevron w-[16px] h-[16px] text-[#262626]"></i>
+                        </summary>
+                        <div class="content text-[#828282] mt-2">
+                            <p>
+                                Lorem ipsum dolor amet consectetur adipiscing elit sed do eiusmod tempor incididunt.
+                            </p>
+                        </div>
+                    </details>
+                    <details class="py-4">
+                        <summary class="text-[20px] text-[#262626]">
+                            Our greenhouse mission.
+                            <i data-feather="plus" class="custom-chevron w-[16px] h-[16px] text-[#262626]"></i>
+                            <i data-feather="minus" class="custom-chevron w-[16px] h-[16px] text-[#262626]"></i>
+                        </summary>
+                        <div class="content text-[#828282] mt-2">
+                            <p>
+                                Lorem ipsum dolor amet consectetur adipiscing elit sed do eiusmod tempor incididunt.
+                            </p>
+                        </div>
+                    </details>
+                    <details class="py-4">
+                        <summary class="text-[20px] text-[#262626]">
+                            Value of our greenhouse.
+                            <i data-feather="plus" class="custom-chevron w-[16px] h-[16px] text-[#262626]"></i>
+                            <i data-feather="minus" class="custom-chevron w-[16px] h-[16px] text-[#262626]"></i>
+                        </summary>
+                        <div class="content text-[#828282] mt-2">
+                            <p>
+                                Lorem ipsum dolor amet consectetur adipiscing elit sed do eiusmod tempor incididunt.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-[50px]">
+        <div class="container mx-auto space-y-10">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 lg:px-4 text-center flex flex-col items-center space-y-2">
+                    <img src="./img/demo-garden-plants-about-icon-01.svg" alt="">
+                    <h1 class="text-[#262626] text-[18px] font-bold">Wide variety of plants</h1>
+                    <h1 class="text-[#828282]">Lorem ipsum is simply dummy text printing typesetting.</h1>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 lg:px-4 text-center flex flex-col items-center space-y-2">
+                    <img src="./img/demo-garden-plants-about-icon-02.svg" alt="">
+                    <h1 class="text-[#262626] text-[18px] font-bold">Expert advice</h1>
+                    <h1 class="text-[#828282]">Lorem ipsum is simply dummy text printing typesetting.</h1>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 lg:px-4 text-center flex flex-col items-center space-y-2">
+                    <img src="./img/demo-garden-plants-about-icon-03.svg" alt="">
+                    <h1 class="text-[#262626] text-[18px] font-bold">High quality product</h1>
+                    <h1 class="text-[#828282]">Lorem ipsum is simply dummy text printing typesetting.</h1>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 lg:px-4 text-center flex flex-col items-center space-y-2">
+                    <img src="./img/demo-garden-plants-about-icon-04.svg" alt="">
+                    <h1 class="text-[#262626] text-[18px] font-bold">Affordable prices</h1>
+                    <h1 class="text-[#828282]">Lorem ipsum is simply dummy text printing typesetting.</h1>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#1d2019] font-medium text-center">Delivery to your door We’ll bring your plants to your door, <a href="#" class="font-bold underline underline-offset-4">anywhere in Hongo</a></h1> 
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class="bg-[url(/img/demo-garden-plants-footer-bg.webp)] bg-no-repeat bg-cover bg-center">
+    <div class="w-full border-b border-[#264c3a]">
+        <div class="container mx-auto">
+            <div class="py-20 grid grid-cols-12">
+                <div class="col-span-12 md:col-span-6 lg:col-span-2 p-2">
+                    <h1 class="font-semibold text-white mb-2">Categories</h1>
+                    <ul class="space-y-1">
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">For Beginners</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Flowering Plants</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Decor Plants</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Pet-friendly plants</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">All plant and Tree</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-2 p-2">
+                    <h1 class="font-semibold text-white mb-2">Quick Links</h1>
+                    <ul class="space-y-1">
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">About us</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Our services</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Latest articles</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Deal of the day</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-3 p-2">
+                    <h1 class="font-semibold text-white mb-2">Information</h1>
+                    <ul class="space-y-1">
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Order history</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Customer support</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Terms & conditions</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Resturns & exchanges</a></li>
+                        <li class="text-[#ffffff4d] hover:text-white duration-300 ease-in-out"><a href="#">Shipping & delivery</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-5 p-2 lg:py-2 lg:pr-2 lg:pl-[135px] space-y-4">
+                    <div>
+                        <h1 class="font-bold text-[32px] text-white">Subscribe to newsletter</h1>
+                        <h3 class="text-[#ffffff4d]">Sign up and enjoy 10% off your first order.</h3>
+                    </div>
+                    <div>
+                        <form action="#" method="post" class="relative">
+                            <input class="px-0 bg-transparent text-white border-x-0 border-t-0 border-b-2 border-[#ffffff66] w-full placeholder:text-[#ffffff66] placeholder:font-light focus:ring-0" placeholder="Enter your email" type="email" name="" id="" required>
+                            <button type="submit" class="bg-transparent border-0 absolute top-1/2 -translate-y-1/2 right-0 p-[15px]"><i data-feather="mail" class="text-white w-[16px]"></i></button>
+                        </form>
+                        
+                    </div>
+                    <div>
+                        <img src="./img/demo-garden-plants-footer-payment-icon.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full">
+        <div class="container mx-auto py-[25px] flex flex-col space-y-4 lg:space-y-0 lg:flex-row items-center justify-between">
+            <div class="flex items-center flex-col md:flex-row lg:divide-x divide-[#264c3a]">
+                <div class="p-2 md:pr-8">
+                    <img src="./img/demo-garden-plants-footer-logo.svg" alt="">
+                </div>
+                <div class="p-2 md:pl-8">
+                    <h1 class="text-[#ffffff4d] text-sm">© 2024 Hongo is proudly powered by <a href="#" class="hover:text-white duration-300 ease-in-out underline">ThemeZaa</a></h1>
+                </div>
+            </div>
+            <div class="flex space-x-3">
+                <span class="font-semibold text-[#ffffff4d]"><a href="#">Fb.</a></span>
+                <span class="font-semibold text-[#ffffff4d]"><a href="#">Tw.</a></span>
+                <span class="font-semibold text-[#ffffff4d]"><a href="#">Ig.</a></span>
+                <span class="font-semibold text-[#ffffff4d]"><a href="#">Pt.</a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    feather.replace();
+</script>
+<script src="./js/script.js"></script>
+<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>

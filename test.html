@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Radio Buttons with Carousel</title>
+  <style>
+    /* For Landing page Play Video */
+    @keyframes ping {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.25;
+        }
+        100% {
+            transform: scale(1.75);
+            opacity: 0;
+        }
+    }
+
+    .custom-animate-ping {
+        animation: ping 1.75s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+    /* Styles for the carousel container */
+    .carousel {
+      width: 300%; /* Width adjusted to accommodate all slides */
+      display: flex;
+      overflow-x: hidden;
+      transition: transform 0.3s ease;
+    }
+    
+    /* Styles for individual slides */
+    .slide {
+      width: calc(100% / 3); /* Each slide takes one-third of the carousel width */
+      flex-shrink: 0;
+      height: 200px; /* Adjust height as needed */
+    }
+
+    /* Hide radio buttons */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Style for the custom radio button container */
+    .custom-radio {
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+    }
+
+    /* Style for the plus icon */
+    .custom-radio::before {
+      content: "+";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-weight: 700;
+      color: #000;
+
+    }
+
+    /* Style for the custom radio button when checked */
+    input[type="radio"]:checked + .custom-radio::before {
+      color: #fff;
+    }
+
+    /* Change background when radio button is checked */
+    input[type="radio"]:checked + .custom-radio {
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <input type="radio" id="radio1" name="radio-group" onclick="showSlide(0)" checked>
+        <label for="radio1" class="custom-radio"></label>
+    </div>
+
+    <div>
+        <input type="radio" id="radio2" name="radio-group" onclick="showSlide(1)">
+        <label for="radio2" class="custom-radio"></label>
+    </div>
+
+<div>
+    <input type="radio" id="radio3" name="radio-group" onclick="showSlide(2)">
+    <label for="radio3" class="custom-radio"></label>
+</div>
+
+
+  <div class="carousel">
+    <div class="slide" style="background-color: red;">Slide 1</div>
+    <div class="slide" style="background-color: green;">Slide 2</div>
+    <div class="slide" style="background-color: blue;">Slide 3</div>
+  </div>
+
+  <script>
+    // Function to show the corresponding slide when radio button is clicked
+    function showSlide(index) {
+      var carousel = document.querySelector('.carousel');
+      var slideWidth = document.querySelector('.slide').offsetWidth;
+      carousel.style.transform = `translateX(-${index * slideWidth}px)`;
+    }
+  </script>
+</body>
+</html>
