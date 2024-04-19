@@ -1956,6 +1956,14 @@ input:checked + .toggle-bg {
   background-image: url(/img/demo-garden-plants-footer-bg.webp);
 }
 
+.bg-\[url\(\'\/img\/demo-garden-plants-product-bg-img\.webp\'\)\] {
+  background-image: url('/img/demo-garden-plants-product-bg-img.webp');
+}
+
+.bg-\[url\(\'\.\/img\/demo-garden-plants-product-bg-img\.webp\'\)\] {
+  background-image: url('./img/demo-garden-plants-product-bg-img.webp');
+}
+
 .bg-auto {
   background-size: auto;
 }
