@@ -34,6 +34,40 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+
+    // Function to check if element is completely out of viewport
+    function isElementOutOfViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= window.innerHeight ||
+            rect.left >= window.innerWidth ||
+            rect.bottom <= 0 ||
+            rect.right <= 0
+        );
+    }
+    
+    // Function to handle visibility check
+    function handleVisibility() {
+        var targetElement = document.getElementById('target-element');
+        var triggerElement = document.getElementById('trigger-element');
+        
+        if (isElementOutOfViewport(targetElement)) {
+            triggerElement.style.top = '0'; // Show trigger element with transition
+        
+        } else {
+            triggerElement.style.top = '-100px'; // Hide trigger element with transition
+            
+        }
+    }
+    
+    // Attach scroll event listener to window
+    window.addEventListener('scroll', handleVisibility);
+    window.addEventListener('resize', handleVisibility); // Handle resize events as well
+
+    // Initial check on page load
+    window.onload = handleVisibility;
+    
+
     
     var carousel1 = document.querySelector('.carousel1');
     var slides = document.querySelectorAll('.slides');
@@ -76,37 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     
 
-    // Function to check if element is completely out of viewport
-    function isElementOutOfViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-          rect.top >= window.innerHeight ||
-          rect.left >= window.innerWidth ||
-          rect.bottom <= 0 ||
-          rect.right <= 0
-        );
-      }
-  
-      // Function to handle visibility check
-      function handleVisibility() {
-        var targetElement = document.getElementById('target-element');
-        var triggerElement = document.getElementById('trigger-element');
-        
-        if (isElementOutOfViewport(targetElement)) {
-            triggerElement.style.top = '0'; // Show trigger element with transition
-      
-        } else {
-            triggerElement.style.top = '-100px'; // Hide trigger element with transition
-            
-        }
-      }
-  
-      // Attach scroll event listener to window
-      window.addEventListener('scroll', handleVisibility);
-      window.addEventListener('resize', handleVisibility); // Handle resize events as well
-  
-      // Initial check on page load
-      window.onload = handleVisibility;
+
     
     var modal = document.getElementById("myModal");
     var btn = document.querySelector(".play-btn");

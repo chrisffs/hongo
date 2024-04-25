@@ -2199,6 +2199,11 @@ input:checked + .toggle-bg {
   padding-bottom: 80px;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -3285,6 +3290,11 @@ details:not([open]) > .content {
     padding-bottom: 25px;
   }
 
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .md\:pl-8 {
     padding-left: 2rem;
   }
@@ -3433,6 +3443,10 @@ details:not([open]) > .content {
     justify-content: space-between;
   }
 
+  .lg\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -3501,6 +3515,11 @@ details:not([open]) > .content {
   .lg\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  .lg\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .lg\:pb-\[60px\] {
@@ -3609,6 +3628,10 @@ details:not([open]) > .content {
     justify-content: space-between;
   }
 
+  .xl\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .xl\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -3641,6 +3664,11 @@ details:not([open]) > .content {
   .xl\:py-\[70px\] {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+
+  .xl\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .xl\:pb-\[60px\] {
