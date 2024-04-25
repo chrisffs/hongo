@@ -71,6 +71,48 @@ input[type="radio"] {
 
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.tooltip .tooltiptext {
+    font-size: 13px;
+    visibility: hidden;
+    width: max-content;
+    white-space: nowrap;
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 10px;
+    position: absolute;
+    right: 115%;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: -10px; /* Adjust the position to align with the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #262626; /* Change the border color to black on the right side */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* Styles for the carousel container */
 .carousel1 {
     /* border: 1px solid red; */
@@ -196,3 +238,6 @@ details:not([open]) > .content {
     max-height: 0px; /* Adjust the maximum height according to your content */
 }
 
+.rotate-icon {
+    transform: rotate(180deg); /* Rotate the icon 180 degrees */  
+}

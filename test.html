@@ -1,112 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom Radio Buttons with Carousel</title>
-  <style>
-    /* For Landing page Play Video */
-    @keyframes ping {
-        0% {
-            transform: scale(0);
-            opacity: 0;
-        }
-        50% {
-            opacity: 0.25;
-        }
-        100% {
-            transform: scale(1.75);
-            opacity: 0;
-        }
-    }
-
-    .custom-animate-ping {
-        animation: ping 1.75s cubic-bezier(0, 0, 0.2, 1) infinite;
-    }
-    /* Styles for the carousel container */
-    .carousel {
-      width: 300%; /* Width adjusted to accommodate all slides */
-      display: flex;
-      overflow-x: hidden;
-      transition: transform 0.3s ease;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="./css/output.css">
+    <title>Hongo</title>
+    <style>
+      .toggle-transition {
+        transition: height 0.3s ease-in-out; /* Adjust duration and timing function as needed */
+      }
+      .rotate-icon {
+        transform: rotate(180deg); /* Rotate the icon 180 degrees */  
+      }
     
-    /* Styles for individual slides */
-    .slide {
-      width: calc(100% / 3); /* Each slide takes one-third of the carousel width */
-      flex-shrink: 0;
-      height: 200px; /* Adjust height as needed */
-    }
-
-    /* Hide radio buttons */
-    input[type="radio"] {
-      display: none;
-    }
-
-    /* Style for the custom radio button container */
-    .custom-radio {
-      display: inline-block;
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      position: relative;
-      cursor: pointer;
-    }
-
-    /* Style for the plus icon */
-    .custom-radio::before {
-      content: "+";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 24px;
-      font-weight: 700;
-      color: #000;
-
-    }
-
-    /* Style for the custom radio button when checked */
-    input[type="radio"]:checked + .custom-radio::before {
-      color: #fff;
-    }
-
-    /* Change background when radio button is checked */
-    input[type="radio"]:checked + .custom-radio {
-      background-color: #000;
-    }
-  </style>
+    </style>
 </head>
 <body>
-    <div>
-        <input type="radio" id="radio1" name="radio-group" onclick="showSlide(0)" checked>
-        <label for="radio1" class="custom-radio"></label>
-    </div>
+    <section class="pb-[50px]">
+        <div class="flex flex-col lg:flex-row max-w-[var(--max-width-calc)] mx-auto px-4 ">
+            <div class="w-full lg:w-2/3 relative">       
+                <div class="absolute left-[25%] top-[35%]">
+                    <div class="absolute w-[34px] h-[34px] rounded-full bg-white custom-animate-ping z-0"></div>
+                    <input type="radio" id="radio1" name="radio-group" checked>
+                    <label for="radio1" class="custom-radio"></label>
+                </div>
+                <div class="absolute left-[50%] top-[65%]">
+                    <div class="absolute w-[34px] h-[34px] rounded-full bg-white custom-animate-ping z-0"></div>
+                    <input type="radio" id="radio2" name="radio-group">
+                    <label for="radio2" class="custom-radio"></label>
+                </div>
+                <div class="absolute left-[69%] top-[14%]">
+                    <div class="absolute w-[34px] h-[34px] rounded-full bg-white custom-animate-ping z-0"></div>
+                    <input type="radio" id="radio3" name="radio-group">
+                    <label for="radio3" class="custom-radio"></label>
+                </div>
+                <img src="./img/demo-garden-plants-img-01.jpg" class="w-full h-full rounded-t-[16px] lg:rounded-r-none lg:rounded-l-[16px] object-cover" alt="" srcset="">
+            </div>
+            <div class="w-full lg:w-1/3 bg-no-repeat bg-cover rounded-b-[16px] lg:rounded-l-none lg:rounded-r-[16px] py-[50px] flex items-center justify-center" style="background-image: url('./img/demo-garden-plants-product-bg-img.webp');">
+                <div class="text-center flex flex-col items-center">
+                    <div class="pb-[30px]">
+                        <h1 class="text-[#51534e] font-medium border-b-2 border-[#c9cec7] w-max mx-auto ">A LIVING GIFT - UPTO 30% OFF</h1>
+                        <h2 class="text-[#145333] text-[32px] xl:text-[45px] font-bold">Special plants</h2>
+                    </div>
+                    <div class="overflow-hidden max-w-[75%] md:max-w-[50%]">
+                        <div class="carousel1 w-full md:mx-0 max-w-[calc(75% * 3)] lg:max-w-[calc(50% * 3)]">
+                            <div class="flex-[0_0_auto] slides w-full"> 
+                                <a href="#" class="px-[15px] group/card">
+                                    <div class="relative overflow-hidden rounded">
+                                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                                            <button type="button" class="tooltip bg-white p-3 rounded-full">
+                                                <i data-feather="heart" class="w-[14px] h-[14px]"></i>
+                                                <span class="tooltiptext">Add to wishlist</span>
+                                            </button>
+                                        </div>
+                                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                                            <button type="button" class="tooltip bg-white p-3 rounded-full">
+                                                <i data-feather="layers" class="w-[14px] h-[14px]"></i>
+                                                <span class="tooltiptext">Add to compare</span>
+                                            </button>
+                                        </div>
+                                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                                </div>
+                                            </button>
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">QUICK VIEW</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <img src="./img/garden-plants-product-05.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500 " alt="" srcset="">
+                                        <div class="flex border rounded-b-md xl:hidden">
+                                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                                
+                                        </div>
+                                    </div>
+                                    <div class="py-4 text-center">
+                                        <h1 class="text-[18px] text-[#262626] font-semibold">Bird’s nest fern</h1>
+                                        <h2 class="text-[#828282]">$45.00
+                                            –
+                                            $63.00</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="flex-[0_0_auto] slides w-full">
+                                <a href="#" class="px-[15px] group/card">
+                                    <div class="relative overflow-hidden rounded">
+                                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                                            <button type="button" class="tooltip bg-white p-3 rounded-full">
+                                                <i data-feather="heart" class="w-[14px] h-[14px]"></i>
+                                                <span class="tooltiptext">Add to wishlist</span>
+                                            </button>
+                                        </div>
+                                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                                            <button type="button" class="tooltip bg-white p-3 rounded-full">
+                                                <i data-feather="layers" class="w-[14px] h-[14px]"></i>
+                                                <span class="tooltiptext">Add to compare</span>
+                                            </button>
+                                        </div>
+                                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                                </div>
+                                            </button>
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">QUICK VIEW</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <img src="./img/garden-plants-product-09.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500" alt="" srcset="">
+                                        <div class="flex border rounded-b-md xl:hidden">
+                                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                                
+                                        </div>
+                                    </div>
+                                    <div class="py-4 text-center">
+                                        <h1 class="text-[18px] text-[#262626] font-semibold">Snake plant laurentii</h1>
+                                        <h2 class="text-[#828282]">$29.00
+                                            –
+                                            $37.00</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="flex-[0_0_auto] slides w-full">
+                                <a href="#" class=" px-[15px] group/card">
+                                    <div class="relative overflow-hidden rounded">
+                                        <div class="absolute z-20 top-[17px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-300">
+                                            <button type="button" class="tooltip bg-white p-3 rounded-full">
+                                                <i data-feather="heart" class="w-[14px] h-[14px]"></i>
+                                                <span class="tooltiptext">Add to wishlist</span>
+                                            </button>
+                                        </div>
+                                        <div class="absolute z-20 top-[63px] right-[17px] xl:right-0 xl:opacity-0 xl:group-hover/card:opacity-100 xl:group-hover/card:right-[17px] ease-in-out duration-500">
+                                            <button type="button" class="tooltip bg-white p-3 rounded-full">
+                                                <i data-feather="layers" class="w-[14px] h-[14px]"></i>
+                                                <span class="tooltiptext">Add to compare</span>
+                                            </button>
+                                        </div>
+                                        <div class="hidden absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:flex flex-col gap-3">
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full -translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">SELECT OPTIONS</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="shopping-bag" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">SELECT OPTIONS</p>
+                                                </div>
+                                            </button>
+                                            <button type="button" class="group overflow-hidden relative p-3 rounded-full translate-x-[34px] w-[150px] h-[40px] bg-white hover:bg-[#262626] opacity-0 group-hover/card:opacity-100 group-hover/card:-translate-x-[0] ease-in-out duration-300">
+                                                <div class="flex items-center gap-2 justify-center relative group-hover:translate-y-[-40px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px]"></i> 
+                                                    <p class="text-[11px]">QUICK VIEW</p>
+                                                </div>
+                                                <div class="flex items-center gap-2 justify-center relative bottom-[-20px] group-hover:translate-y-[-36px] transition ease-in-out duration-300">
+                                                    <i data-feather="eye" class="w-[14px] h-[14px] text-white"></i> 
+                                                    <p class="text-[11px] text-white">QUICK VIEW</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <img src="./img/garden-plants-product-10.jpg" class="w-full xl:group-hover/card:scale-110 xl:group-hover/card:blur-sm ease-in-out duration-500 " alt="" srcset="">
+                                        <div class="flex border rounded-b-md xl:hidden">
+                                            <div class="w-1/2 h-[40px] border-r flex items-center justify-center"><i data-feather="shopping-bag" class="w-[14px] h-[14px]"></i> </div>
+                                            <div class="w-1/2 h-[40px] flex items-center justify-center"><i data-feather="eye" class="w-[14px] h-[14px]"></i> </div>
+                                                
+                                        </div>
+                                    </div>
+                                    <div class="py-4 text-center">
+                                        <h1 class="text-[18px] text-[#262626] font-semibold">Peperomia obtusifolia</h1>
+                                        <h2 class="text-[#828282]">$41.00 - $53.00</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div>
-        <input type="radio" id="radio2" name="radio-group" onclick="showSlide(1)">
-        <label for="radio2" class="custom-radio"></label>
-    </div>
 
-<div>
-    <input type="radio" id="radio3" name="radio-group" onclick="showSlide(2)">
-    <label for="radio3" class="custom-radio"></label>
-</div>
+<script>
+    feather.replace();
+    
+</script>
+<script src="./js/script.js"></script>
+<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 
-
-  <div class="carousel">
-    <div class="slide" style="background-color: red;">Slide 1</div>
-    <div class="slide" style="background-color: green;">Slide 2</div>
-    <div class="slide" style="background-color: blue;">Slide 3</div>
-  </div>
-
-  <script>
-    // Function to show the corresponding slide when radio button is clicked
-    function showSlide(index) {
-      var carousel = document.querySelector('.carousel');
-      var slideWidth = document.querySelector('.slide').offsetWidth;
-      carousel.style.transform = `translateX(-${index * slideWidth}px)`;
-    }
-  </script>
 </body>
 </html>

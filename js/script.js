@@ -1,4 +1,39 @@
 document.addEventListener("DOMContentLoaded", function() {
+    var footerHeaders = document.querySelectorAll('.footer-header');
+    var media = matchMedia('(max-width: 768px)');
+
+    // Function to handle click event
+    function handleClick() {
+        var ulElement = this.parentNode; // Using parentNode to get the parent element
+        var iconElement = this.querySelector('.icon');
+        
+        ulElement.classList.contains('h-[32px]') 
+        ? (ulElement.classList.remove('h-[32px]'), ulElement.classList.add('h-[95%]')) 
+        : (ulElement.classList.remove('h-[95%]'), ulElement.classList.add('h-[32px]'));
+
+        iconElement.classList.toggle('rotate-icon');
+    }
+
+    // Initial call to set up event listeners based on initial screen size
+    if (media.matches) {
+        footerHeaders.forEach(function(footerHeader) {
+            footerHeader.addEventListener('click', handleClick);
+        });
+    }
+
+    // Add event listener for change in media query
+    media.addEventListener("change", function(event) {
+        if (event.matches) {
+            footerHeaders.forEach(function(footerHeader) {
+                footerHeader.addEventListener('click', handleClick);
+            });
+        } else {
+            footerHeaders.forEach(function(footerHeader) {
+                footerHeader.removeEventListener('click', handleClick);
+            });
+        }
+    });
+
     
     var carousel1 = document.querySelector('.carousel1');
     var slides = document.querySelectorAll('.slides');
@@ -38,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // window.addEventListener('resize', function() {
     //     updateCarouselWidth();
     // });
+    
     
 
     // Function to check if element is completely out of viewport
