@@ -1507,6 +1507,14 @@ input:checked + .toggle-bg {
   max-width: 75%;
 }
 
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
+
+.max-w-\[60\%\] {
+  max-width: 60%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -3207,6 +3215,10 @@ details:not([open]) > .content {
     max-width: 50%;
   }
 
+  .md\:max-w-\[100\%\] {
+    max-width: 100%;
+  }
+
   .md\:cursor-auto {
     cursor: auto;
   }
@@ -3403,6 +3415,10 @@ details:not([open]) > .content {
 
   .lg\:max-w-\[75\%\] {
     max-width: 75%;
+  }
+
+  .lg\:max-w-\[100\%\] {
+    max-width: 100%;
   }
 
   .lg\:flex-row {
