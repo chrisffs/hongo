@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function showSlide(index) {
         var carouselWidth = carousel1.offsetWidth;
         var slideWidth = document.querySelector('.slides').offsetWidth;
-       console.log(slideWidth);
+       console.log(carouselWidth);
         carousel1.style.transform = `translateX(-${index * carouselWidth}px)`;
     }
 
